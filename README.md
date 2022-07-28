@@ -23,12 +23,7 @@ pip install -r requirements.txt
 Requirements are only installed for the hcaptcha solver.
 
 #### Now Install Stuff for the Script.
-1. Install Chrome in your windows/linux (Learn that from google)
-2. Download Chrome driver from here--> version 103 is of my choice ... https://chromedriver.storage.googleapis.com/index.html?path=103.0.5060.134/
-3. Open DiscordServerJoiner.py and edit line number 15 --> Add the chrome driver location, such as:
-  Linux =  '/ubuntu/beauty/server/join/chromedriver' 
-  Windows = "C:\\Users\\SadPepe\\Desktop\\chromedriver.exe"
-4. Add servers to 1.txt e.g discord.com/invite/pepeSwagXDancingBlob
+  Add servers to 1.txt e.g discord.com/invite/pepeSwagXDancingBlob
 
 ### How to open Chrome Borwser in debugger mode. So, you can login your account and sync with script/bot.
 1. Open Notepad and paste the following
