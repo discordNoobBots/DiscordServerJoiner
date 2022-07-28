@@ -12,7 +12,7 @@ options = webdriver.ChromeOptions()
 
 options.add_experimental_option("debuggerAddress","localhost:8989")
 
-s = Service('/Add/Your/Chrome/Driver/Location/here/chromedriver')
+s = Service('./chromedriver')
 browser = webdriver.Chrome(service=s,options=options)
 
 #----------------------------------------------------------------
