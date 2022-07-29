@@ -15,13 +15,6 @@ https://github.com/QIN2DIM/hcaptcha-challenger/releases/tag/model
 ```
 Download All Models, then copy and paste all these models in 'models' Folder. Where is Models Folder?? I cant See, 'create new folder in DiscordServerJoiner'
 
-You must have pip installed on your Windows/Linux
-#### Command 1:
-```
-pip install -r requirements.txt
-```
-Requirements are only installed for the hcaptcha solver.
-
 #### Now Install Stuff for the Script.
   Add servers to 1.txt e.g discord.com/invite/pepeSwagXDancingBlob
 
