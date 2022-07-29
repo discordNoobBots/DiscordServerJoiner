@@ -1,6 +1,8 @@
 import time
 
 import os
+import subprocess
+import sys
 
 from apis.scaffold import challenge
 
