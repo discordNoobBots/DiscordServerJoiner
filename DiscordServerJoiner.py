@@ -20,12 +20,29 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
+from pushbullet import Pushbullet
+
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option("debuggerAddress","localhost:8989")
 
 s = Service('./chromedriver')
 browser = webdriver.Chrome(service=s,options=options)
+
+
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+#if you want to get notifications on your phone, use pushbullet
+API_KEYPUSHBULLET = "API_KEY"
+
+def sendPushBulletNotification(channelType, text):
+    pb = Pushbullet(API_KEYPUSHBULLET)
+    push = pb.push_note(channelType, text)
+
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+
+
 
 #----------------------------------------------------------------
 
@@ -240,6 +257,10 @@ with open(infile, encoding="utf-8") as fin:
             print("wait time 70 seconds")
             if checkMembTemp == "High":
                 print(count,link, "[SUCCESS] [ABOVE 250 MEMBERS]")
+                
+                if API_KEYPUSHBULLET != "API_KEY":
+                    sendPushBulletNotification("Success", link)
+                    
                 #Only way to skip that popup would u like to open discord in app? 
                 firstwindow = browser.window_handles[0]
                 browser.switch_to.new_window()
