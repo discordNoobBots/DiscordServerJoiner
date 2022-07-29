@@ -47,7 +47,10 @@ Now Login your discord account,
 
 After login, DO NOT CLOSE CHROME.
 
-Run the script. 
+Run the script by the following command:
+```
+python DiscordServerJoiner.py
+```
 
 Any issues, Try Stackoverflow.
 
