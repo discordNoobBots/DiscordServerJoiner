@@ -39,7 +39,7 @@ google-chrome --remote-debugging-port=8989 --user-data-dir="/home/ubuntu/Desktop
 ```
 ECHO ON
 cd C:\Program Files\Google\Chrome\Application\
-chrome.exe --remote-debugging-port=8989 --user-data-dir="F:\chromeProfile1"
+chrome.exe --remote-debugging-port=8989 --user-data-dir="C:\discordPrfoile"
 ```
 
 The above are just examples. I dont know where you installed Chrome, you gotta find that on your own. 
