@@ -8,6 +8,16 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+print("")
+print("")
+print("")
+print("Installed Requirements")
+print("")
+print("")
+print("")
+print("")
+
 options = webdriver.ChromeOptions()
 
 options.add_experimental_option("debuggerAddress","localhost:8989")
